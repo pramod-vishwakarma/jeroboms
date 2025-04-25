@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="154px" height="153px" viewBox="0 0 154 153" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_services_sourcing_blue</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Extra-Large" transform="translate(-1443, -2184)" stroke="#03368C" stroke-width="6">
+            <g id="Our-services" transform="translate(160, 1392)">
+                <g id="Sourcing" transform="translate(1120, 795)">
+                    <g id="icon_services_sourcing_blue" transform="translate(166, 0)">
+                        <path d="M65,127.2 C29.1,127.2 0,98.7 0,63.6 C0,28.5 29.1,0 65,0 C100.9,0 130,28.5 130,63.6 C130,98.7 100.9,127.2 65,127.2 Z" id="Path" stroke-linejoin="round"></path>
+                        <line x1="110.3" y1="109.7" x2="147.9" y2="146.5" id="Path"></line>
+                        <path d="M84.8,57.7 L84.8,99.7 C84.8,101.4 84.1,103.1 82.9,104.3 C81.7,105.5 80,106.2 78.2,106.2 L51.8,106.2 C50,106.2 48.4,105.5 47.1,104.3 C45.9,103.1 45.2,101.4 45.2,99.7 L45.2,57.7 C45.2,56 45.9,54.4 47.1,53.1 L58.3,42.1 L58.3,19.5 C58.3,18.7 58.6,17.8 59.3,17.2 C59.9,16.6 60.7,16.3 61.6,16.3 L68.3,16.3 C69.2,16.3 70,16.6 70.6,17.2 C71.2,17.8 71.6,18.6 71.6,19.5 L71.6,42.1 L82.8,53.1 C84,54.3 84.7,55.9 84.7,57.7 L84.7,57.7 L84.7,57.7 L84.8,57.7 Z M68.3,68.8 L45.3,68.8 L45.3,87.6 L68.3,87.6 L68.3,68.8 L68.3,68.8 Z M58.4,32.5 L71.6,32.5" id="Shape" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

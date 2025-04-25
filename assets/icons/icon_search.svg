@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_search 2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Extra-Large" transform="translate(-1580, -45)" fill-rule="nonzero">
+            <g id="icon_search" transform="translate(1580, 45)">
+                <path d="M35,70 C54.33,70 70,54.33 70,35 C70,15.67 54.33,0 35,0 C15.67,0 0,15.67 0,35 C0,54.33 15.67,70 35,70" id="Path" fill="#FFFFFF"></path>
+                <path d="M24.26,33.45 C24.26,27.92 28.74,23.44 34.27,23.44 C39.8,23.44 44.28,27.92 44.28,33.45 C44.28,35.56 43.63,37.51 42.52,39.12 L47.39,43.99 L44.82,46.56 L39.95,41.69 C38.34,42.8 36.38,43.45 34.28,43.45 C28.75,43.45 24.27,38.97 24.27,33.44 M34.27,27.08 C30.75,27.08 27.9,29.93 27.9,33.45 C27.9,36.97 30.75,39.82 34.27,39.82 C37.79,39.82 40.64,36.97 40.64,33.45 C40.64,29.93 37.79,27.08 34.27,27.08" id="Shape" fill="#03368C"></path>
+            </g>
+        </g>
+    </g>
+</svg>
