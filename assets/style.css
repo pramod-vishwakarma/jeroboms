@@ -6,6 +6,7 @@
   --white-color: #ffffff;
   --dark-color: #000000;
 }
+
 @font-face {
   font-family: "MrEavesXLModOT-Bold";
   src: url("./fonts/MrEavesXLModOT-Bold.woff2") format("woff2"),
@@ -64,56 +65,15 @@ h6 {
 }
 
 .hero-section {
-  background: linear-gradient(
-    135deg,
-    var(--accent-color) 0%,
-    var(--accent-color) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--accent-color) 0%,
+      var(--accent-color) 100%);
   /* min-height: 100vh; */
   /* display: flex; */
   align-items: center;
   padding-top: 40px;
   position: relative;
   overflow: hidden;
-}
-
-.hero-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.circle-1 {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  top: -150px;
-  right: 10%;
-}
-
-.circle-2 {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  bottom: 5%;
-  left: 5%;
-}
-
-.circle-3 {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  top: 20%;
-  left: 20%;
 }
 
 .section-padding {
@@ -130,6 +90,7 @@ h6 {
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
+
 /* 
 .section-title h2::after {
   content: "";
@@ -255,10 +216,241 @@ h6 {
   background: var(--secondary-color);
   transform: translateY(-2px);
 }
+
 /* 
 .social-link img {
   filter: brightness(0) invert(1);
 } */
+.title {
+  color: rgba(3, 54, 140, 1);
+  font-family: "MrEavesXLModOT-Ultra";
+  font-size: 72px;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 82px;
+}
+
+.body1 {
+  color: rgba(3, 54, 140, 1);
+  font-family: "MrEavesXLModOT-Reg";
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 48px;
+}
+
+.our-service-text {
+  color: rgba(3, 54, 140, 1);
+  font-family: "MrEavesXLModOT-Ultra";
+  font-size: 60px;
+  font-weight: 900;
+  font-style: Ultra;
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.service-card-title {
+  opacity: 1;
+  color: rgba(3, 54, 140, 1);
+  font-family: "MrEavesXLModOT-Bold";
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.service-desc {
+  color: rgba(3, 54, 140, 1);
+  font-family: "MrEavesXLModOT-Reg";
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.trade-section {
+  background-image: linear-gradient(240deg, #03368C 50%, #000000 41%);
+  padding: 40px 0;
+}
+.image-container{
+  text-align: end;
+}
+.image-container img{
+  max-width: 80%;
+}
+.trade-bg-img {
+  background: #000000;
+}
+.trade-list-title{
+  font-family: "MrEavesXLModOT-Ultra";
+  font-size: 60px;
+  font-weight: 900;
+  font-style: Ultra;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 70px;
+}
+.trade-list-desc{
+  color: #ffffff;
+  font-family: "MrEavesXLModOT-Reg";
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.invited-container img{
+  max-width: 80%;
+}
+.bg-dark-subtle {
+  background-color: #000000 !important;
+  color: #ffffff;
+}
+
+.footer-bottom-area ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.footer-bottom-area ul li {
+  color: #ededed;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-bottom-area ul li::before {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 5.2px;
+  width: 1px;
+  height: 14px;
+  background-color: #ededed;
+}
+
+.footer-bottom-area ul li a {
+  display: block;
+  color: #ededed;
+}
+
+.footer-bottom-area ul li:last-child {
+  margin-right: 0;
+  background-color: none;
+}
+
+.footer-bottom-area ul li:last-child::before {
+  display: none;
+}
+
+.bg-primary-theme {
+  background-color: var(--primary-color) !important;
+}
+
+.winner-img {
+  max-width: 305px;
+  max-height: 305px;
+}
+
+.wrapper p{
+  margin: 20px 20px 20px  0;
+  line-height: 34px;
+}
+
+
+.description {
+color: rgba(0, 0, 0, 1);
+font-family: "MrEavesXLModOT-Reg";
+font-size: 24px;
+font-weight: 500;
+font-style: Bold;
+letter-spacing: 0px;
+text-align: left;
+line-height: 58px;
+}
+
+.testimonial-section{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.meetup-section {
+  background-image: url(./images/png/bottleedit.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.meet-up-procedure {
+  background-image: url(https://jbtrade-stg.meraqi.tech/app/uploads/2025/04/Rectangle.png);
+  background-position: bottom right;
+  padding: 80px 90px;
+  color: #000;
+}
+
+.hero-menu ul {
+  padding-left: 0;
+  margin-bottom: 48px;
+  list-style-type: none;
+}
+
+.hero-menu ul li {
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.hero-menu ul li a {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.link-text {
+  font-family: "MrEavesXLModOT-Bold";
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 48px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.link-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--error-color);
+}
+.banner-img{
+  max-height: 600px;
+}
+.border-left{
+  border-left: 1px solid #000000;
+}
+.hero-section-padding{
+ padding: 40px 0 40px 120px;
+}
 
 @media (max-width: 767.98px) {
   .section-padding {
@@ -268,148 +460,114 @@ h6 {
   .navbar {
     background: var(--primary-color);
   }
-}
-.title {
-  color: rgba(3, 54, 140, 1);
-  font-family: "MrEavesXLModOT-Ultra";
-  /* font-size: 85px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0px;
-  text-align: left;
-  line-height: 82px; */
+  .title {
+    color: rgba(3, 54, 140, 1);
+    font-family: "MrEavesXLModOT-Ultra";
+    font-size: 40px;
+    font-style: normal;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 48px;
 }
 .body1 {
-  color: rgba(3, 54, 140, 1);
-  font-family: "MrEavesXLModOT-Bold";
-  /* font-size: 35px;
-  font-weight: 700;
-  font-style: Bold;
-  letter-spacing: 0px;
-  text-align: left;
-  line-height: 48px; */
+    color: rgba(3, 54, 140, 1);
+    font-family: "MrEavesXLModOT-Reg";
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 40px;
+}
+.banner-img{
+  height: auto;
+}
+.hero-section-padding{
+ padding: 20px;
+}
+.hide-hero-menu{
+  display: none !important;
 }
 .our-service-text {
-  color: rgba(3, 54, 140, 1);
-  font-family: "MrEavesXLModOT-Ultra";
-  /* font-size: 80px;
-  font-weight: 900;
-  font-style: Ultra;
-  letter-spacing: 0px;
-  text-align: center;
-  line-height: 60px; */
+    color: rgba(3, 54, 140, 1);
+    font-family: "MrEavesXLModOT-Ultra";
+    font-size: 42px;
+    font-weight: 900;
+    font-style: Ultra;
+    letter-spacing: 0px;
+    text-align: center;
+    line-height: 42px;
 }
-.service-card-title {
-  opacity: 1;
-  color: rgba(3, 54, 140, 1);
-  font-family: "MrEavesXLModOT-Ultra";
-  /* font-size: 45px;
-  font-weight: 900;
-  font-style: Ultra;
-  letter-spacing: 0px;
-  text-align: center;
-  line-height: 52px; */
+.icon-wrapper img {
+    color: var(--primary-color);
+    width: 64px;
+    height: 64px;
 }
 .service-desc {
-  opacity: 1;
-  color: rgba(3, 54, 140, 1);
-  font-family: "MrEavesXLModOT-Bold";
-  /* font-size: 35px;
-  font-weight: 700;
-  font-style: Bold;
-  letter-spacing: 0px;
+    color: rgba(3, 54, 140, 1);
+    font-family: "MrEavesXLModOT-Reg";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.service-card-title {
+    opacity: 1;
+    color: rgba(3, 54, 140, 1);
+    font-family: "MrEavesXLModOT-Bold";
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.image-container{
   text-align: center;
-  line-height: 48px; */
-}
-.trade-section {
-  background-color: var(--primary-color);
-  height: 400px;
-}
-.trade-bg-img{
-  background: #000000;
-}
-.bg-dark-subtle{
-  background-color: #000000 !important;
-  color: #ffffff;
 }
 
-.footer-bottom-area ul {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style-type: none;
+.trade-section {
+    background-image: linear-gradient(-5deg, #03368C 50%, #000000 41%);
 }
-.footer-bottom-area ul li {
-    color: #ededed;
+.text-content{
+  padding: 40px 40px 0px 20px;
+}
+.trade-list-title{
+  font-family: "MrEavesXLModOT-Ultra";
+  font-size: 42px;
+  font-weight: 900;
+  font-style: Ultra;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 42px;
+}
+.trade-list-desc{
+  color: #ffffff;
+  font-family: "MrEavesXLModOT-Reg";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.invited-container img {
+    max-width: 100%;
+}
+.link-text {
+    font-family: "MrEavesXLModOT-Bold";
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+    line-height: 48px;
+    text-transform: uppercase;
     position: relative;
-    display: inline-block;
-    margin-right: 20px;
 }
-.footer-bottom-area ul li::before {
-    content: '';
-    position: absolute;
-    right: -12px;
-    top: 5.2px;
-    width: 1px;
-    height: 14px;
-    background-color: #ededed;
-}
-.footer-bottom-area ul li a {
-    display: block;
-    color: #ededed;
-}
-.footer-bottom-area ul li:last-child {
-    margin-right: 0;
-    background-color: none;
-}
-.footer-bottom-area ul li:last-child::before {
-    display: none;
-}
-.bg-primary-theme{
-  background-color: var(--primary-color) !important;
+.border-left{
+  border-top: 1px solid #000;
+  border-left: 0;
 }
 .winner-img{
-  max-width: 305px;
-  max-height: 305px;
+  margin-top: 16px;
 }
-.wrapper {
-    width: 400px;
-    height: 200px;
-    display: table;
-    margin: 50px auto;
-    padding: 0px;
-    position: relative;
-}
-.wrapper:before {
-    content: "";
-    bottom: 0;
-    right: 0;
-    transform: translate(50%, 50%);
-    box-shadow: -10px -10px 0 #fff;
-    position: absolute;
-    font-family: fontAwesome;
-    font-size: 50px;
-    color: #111;
-    background: #fff;
-}
-.description {
-    font-size: 14px;
-    display: table-cell;
-    vertical-align: middle
-}
-.wrapper:after {
-    content: "\f6b0";
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    box-shadow: 10px 10px 0 #fff;
-    position: absolute;
-    font-family: bootstrap-icons !important;
-    font-size: 50px;
-    color: #111;
-    background: #fff;
-}
-.meetup-section{
-  background-image: url(./images/png/bottleedit.png);
+.meetup-section {
+  background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -417,30 +575,6 @@ h6 {
   display: flex;
   align-items: center;
 }
-.meet-up-procedure{
-  background: var(--accent-color);
-  padding: 40px;
-  border-radius: 0px 0px 150px 0px;
-  color: #000;
-  
+
 }
-.hero-menu ul{
-  padding-left: 0;
-  margin-bottom: 48px;
-  list-style-type: none;
-}
-.hero-menu ul li {
-    color: var(--primary-color);
-    position: relative;
-    display: inline-block;
-    margin-right: 20px;
-}
-.hero-menu ul li a{
-    color: var(--primary-color);
-}
-.navbar-primary{
-  background-color: var(--primary-color) !important;
-}
-.text-primary{
-  color: var(--primary-color) !important;
-}
+

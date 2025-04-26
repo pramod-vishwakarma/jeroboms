@@ -7,40 +7,56 @@
   <title>Jeroboms | Homes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
-    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
   <link href="assets/style.css" rel="stylesheet" />
 </head>
 
 <body>
   <!-- Header -->
+
   <nav class="navbar navbar-expand-lg sticky-top navbar-primary">
     <div class="container">
-      <div class="col-lg-4">
+      <!-- <div class="col-lg-4">
       </div>
-      <div class="col-lg-4">
-         <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+      <div class="col-lg-4"> -->
+         <a class="navbar-brand d-flex justify-content-center align-items-center w-100" href="#">
         <img src="./assets/images//png/logo.png" alt="Logo" width="160"
           height="auto" class="me-2" />
       </a>
-      </div>
-       <div class="col-lg-4">
+      <!-- </div> -->
+      
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto gap-3">
-          <li class="nav-item">
-          <a class="nav-link social-link bg-white" href="#"><i class="lni lni-search-1 text-primary"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link social-link bg-white" href="#"><i class="lni lni-user-4 text-primary"></i>
-            </a>
-          </li>
-      </div>
-      </div>
+      <div class="navbar-collapse collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item d-flex d-lg-none">
+                        <a class="nav-link" href="#">WINES</a>
+                    </li>
+                    <li class="nav-item d-flex d-lg-none">
+                        <a class="nav-link" href="#s">PRODUCERS</a>
+                    </li>
+                    <li class="nav-item d-flex d-lg-none">
+                        <a class="nav-link" href="#">CHAMPAGNE & SPARKLING</a>
+                    </li>
+                    <li class="nav-item d-flex d-lg-none">
+                        <a class="nav-link" href="#">SPIRITS</a>
+                    </li>
+                    <li class="nav-item d-flex d-lg-none">
+                        <a class="nav-link" href="#">TRADE LIST</a>
+                    </li>
+                     <li class="nav-item d-flex d-lg-none">
+                        <a class="nav-link" href="#">FINE WINE LIST</a>
+                    </li>
+                     <li class="nav-item d-flex d-lg-none">
+                        <a class="nav-link" href="#">TRADE LIST</a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-3">
+                <a class="nav-link social-link bg-white" href="#"><i class="lni lni-search-1 text-primary"></i></a>
+                 <a class="nav-link social-link bg-white" href="#"><i class="lni lni-user-4 text-primary"></i></a>
+                 </div>
+            </div>
     </div>
   </nav>
  
@@ -48,7 +64,7 @@
   <!-- Hero Section -->
   <section id="home" class="hero-section">
     <div class="container">
-      <div class="d-flex flex-column flex-md-row justify-content-center text-center text-md-start">
+      <div class="d-none d-lg-flex flex-column flex-md-row justify-content-center text-center text-md-start hide-hero-menu">
         <div class="hero-menu">
           <ul>
             <li><a href="#" class="text-decoration-none">WINES</a></li>
@@ -63,8 +79,8 @@
       </div>
     </div>
     <div class="container-fluid position-relative">
-      <div class="row align-items-center">
-        <div class="col-lg-6 text-white mb-5 mb-lg-0 p-5" data-aos="fade-right">
+      <div class="row align-items-end">
+        <div class="col-lg-6 text-white mb-5 mb-lg-0 hero-section-padding" data-aos="fade-right">
           <h1 class="display-4 fw-bold mb-4 title">
             Artisanal wines for top UK restaurants and retailers
           </h1>
@@ -76,9 +92,11 @@
 
         </div>
         <div class="col-lg-6 p-0" data-aos="fade-left" data-aos-delay="200">
-          <div class="position-relative">
-            <img src="./assets/images/png/bottles-2.png" alt="" class="img-fluid rounded-3" />
-          </div>
+          <div class="position-relative text-center text-md-end">
+          <img src="./assets/images/png/bottles-2-for-desktop.png" alt="" class="img-fluid banner-img d-none d-lg-inline" />
+          
+          <img src="./assets/images/png/bottles-2.png" alt="" class="img-fluid banner-img-center d-inline d-lg-none" />
+        </div>
         </div>
       </div>
     </div>
@@ -90,11 +108,10 @@
       <div class="section-title text-center mb-5" data-aos="fade-up">
         <h2 class="our-service-text">Our Services</h2>
       </div>
-
       <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card h-100 text-center p-4">
-            <div class="icon-wrapper mb-4 mx-auto">
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 text-center p-4 p-sm-2 p-md-4 p-lg-4">
+            <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/portfolio.svg" alt="Portfolio" />
             </div>
             <div class="card-body">
@@ -105,9 +122,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card h-100 text-center p-4 ">
-            <div class="icon-wrapper mb-4 mx-auto">
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 text-center p-4 p-sm-2 p-md-4 p-lg-4">
+            <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/fine_wine_list.svg" alt="Fine wine list" />
             </div>
             <div class="card-body">
@@ -118,9 +135,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card h-100 text-center p-4">
-            <div class="icon-wrapper mb-4 mx-auto">
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 text-center p-4 p-sm-2 p-md-4 p-lg-4">
+            <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/delivery.svg" alt="Delivery" />
             </div>
             <div class="card-body">
@@ -132,9 +149,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
-          <div class="card h-100 text-center p-4">
-            <div class="icon-wrapper mb-4 mx-auto">
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+          <div class="card h-100 text-center p-4 p-sm-2 p-md-4 p-lg-4">
+            <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/training.svg" alt="Training" />
             </div>
             <div class="card-body">
@@ -146,9 +163,9 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 text-center p-4">
-            <div class="icon-wrapper mb-4 mx-auto">
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 text-center p-4 p-sm-2 p-md-4 p-lg-4">
+            <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/advice.svg" alt="Advice" />
             </div>
             <div class="card-body">
@@ -160,9 +177,9 @@
           </div>
         </div>
 
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card h-100 text-center p-4">
-            <div class="icon-wrapper mb-4 mx-auto">
+        <div class="col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 text-center p-4 p-sm-2 p-md-4 p-lg-4">
+            <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/bespoke.svg" alt="Bespoke sourcing" />
             </div>
             <div class="card-body">
@@ -181,20 +198,20 @@
   <section id="trade-section" class="trade-section">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
           <div class="position-relative">
             <div class="text-content">
-              <h1>Trade list</h1>
-              <p>There’s lots to enjoy and<br>
-                producers to discover in our<br>
+              <h1 class="text-white trade-list-title">Trade list</h1>
+              <p class="text-white trade-list-desc">There’s lots to enjoy and
+                producers<br> to discover in our
                 latest Trade List.</p>
-              <a href="#">VIEW THE LIST</a>
+              <a href="#" class="link-text text-white text-decoration-none">VIEW THE LIST</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-left">
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade-left">
           <div class="position-relative">
-            <div class="image-container"></div>
+            <div class="image-container">
             <img src="./assets/images/png/Trade2024_cover.png" alt="Trade List 2024" />
           </div>
         </div>
@@ -207,19 +224,19 @@
   <section id="invited" class="section-padding">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-          <div class="position-relative">
-            <img src="./assets/images/invited.svg" alt="invited" class="img-fluid rounded-3 shadow" />
+        <div class="col-sm-6 col-md-6 col-lg-6 mb-5 mb-md-0 mb-lg-0" data-aos="fade-right">
+          <div class="position-relative invited-container">
+            <img src="./assets/images/png/Trade.jpg" alt="invited" class="img-fluid rounded-3 shadow" />
           </div>
         </div>
-        <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+        <div class="col-sm-6 col-md-6 col-lg-6 ps-lg-5" data-aos="fade-left">
           <div class="section-title1 text-lg-start text-center">
-            <h2>You’re invited</h2>
+            <h2 class="trade-list-title">You’re invited</h2>
           </div>
-          <p class="mb-4">
+          <p class="mb-2 mb-md-4 trade-list-desc text-black">
             Join us for our annual Portfolio Tasting at The Stables in Covent Garden on Wednesday 5th March 2025.
           </p>
-          <a href="#" class="btn btn-primary mt-4">GET THE INFO</a>
+          <a href="#" class="mt-4 text-black text-decoration-none link-text">GET THE INFO</a>
         </div>
       </div>
     </div>
@@ -229,17 +246,17 @@
   <section id="meetup" class="section-padding meetup-section">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
-         
+        <div class="col-lg-6 p-0 m-0" data-aos="fade-right">
+          <img src="./assets/images/png/bottleedit-for-mobile.png" class="img-fluid d-block d-md-none"/>
         </div>
-        <div class="col-lg-6 ps-lg-5 meet-up-procedure" data-aos="fade-left">
+        <div class="col-lg-6 meet-up-procedure" data-aos="fade-left">
           <div class="section-title1 text-lg-start text-center">
-            <h2>Meet the producer</h2>
+            <h2 class="trade-list-title">Meet the producer</h2>
           </div>
-          <p class="mb-4">
+          <p class="mb-4 trade-list-desc text-black">
             Domaine Armand Rousseau is one of the most iconic domaines in Burgundy. Purchasing their wines on release is the dream of Burgundy drinkers.
           </p>
-          <a href="#" class="mt-4">Discover more</a>
+          <a href="#" class="link-text text-black text-decoration-none">Discover more</a>
         </div>
       </div>
     </div>
@@ -248,17 +265,24 @@
   <!-- Blog Section -->
   <section id="testimonial" class="section-padding">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+      <div class="row align-items-center testimonial-section">
+        <div class="col-lg-6 mb-3 mb-md-5 mb-lg-0" data-aos="fade-right">
           <div class="position-relative">
             <div class="wrapper">
+              <div>
+                <img src="./assets//images/comma.svg" width="20px" height="20px"
+                style="rotate: 180deg;" class="img-fluid" />
+              </div>
               <div class="description">
-                <p>At Jeroboams, they take pride in curating a selection of wines that not only meet but exceed the expectations of their customers.</p>
+                <p>At Jeroboams, they take pride in <br>curating a selection of wines that<br> not only meet but exceed the<br>expectations of their customers.</p>
             </div>
+              <div>
+                <img src="./assets//images/comma.svg" width="20px" height="20px" class="img-fluid" />
+              </div>
           </div>
           </div>
         </div>
-        <div class="col-lg-6 ps-lg-5" data-aos="fade-left">
+        <div class="col-lg-6 ps-lg-5 border-left" data-aos="fade-left">
           <div class="d-flex gap-4">
             <div class="winner-img">
           <img src="./assets/images/png/IWC_industry_blue.png" alt="invited" class="img-fluid "/>
@@ -312,7 +336,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 col-6">
+        <div class="col-lg-3 col-md-6">
           <h5 class="fw-bold mb-4">Wines</h5>
           <ul class="list-unstyled">
             <li class="mb-2">
@@ -330,7 +354,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-6 col-6">
+        <div class="col-lg-3 col-md-6">
           <h5 class="fw-bold mb-4">Information</h5>
           <ul class="list-unstyled">
             <li class="mb-2">
@@ -350,13 +374,15 @@
 
         <div class="col-lg-3 col-md-6">
           <h5 class="fw-bold mb-4">Partners</h5>
-          <div class="mb-3 d-flex">
+          <div class="d-flex d-md-block align-items-end gap-3">
+          <div class="mb-3">
             <img src="./assets//images/png/The-Drinks-Trust-Logo.png" alt="Email" width="80"
               height="auto" class="text-primary me-3 flex-shrink-0" />
           </div>
-          <div class="mb-3 d-flex">
+          <div class="mb-3">
              <img src="./assets//images/png/Gerard-Basset-Foundation-Full-logo.png" alt="Email" width="80"
               height="auto" class="text-primary me-3 flex-shrink-0" />
+          </div>
           </div>
         </div>
       </div>
