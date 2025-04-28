@@ -386,7 +386,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
 }
@@ -394,7 +394,7 @@ body {
 .meet-up-procedure {
   background-image: url(https://jbtrade-stg.meraqi.tech/app/uploads/2025/04/Rectangle.png);
   background-position: bottom right;
-  padding: 80px 90px;
+  padding: 70px;
   color: #000;
 }
 
@@ -408,13 +408,16 @@ body {
   color: var(--primary-color);
   position: relative;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 40px;
+}
+.hero-menu ul li:last-child{
+  margin-right: 0 !important;
 }
 
 .hero-menu ul li a {
   color: var(--primary-color);
   font-family: "MrEavesXLModOT-Bold";
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   font-style: Bold;
   letter-spacing: 2px;
@@ -423,6 +426,7 @@ body {
 
 .navbar-primary {
   background-color: var(--primary-color) !important;
+  min-height: 70px;
 }
 
 .text-primary {
@@ -463,7 +467,8 @@ body {
   padding: 40px 0 40px 120px;
 }
 
-.footer-menu-items li, .footer-menu-items li a {
+.footer-menu-items li,
+.footer-menu-items li a {
   opacity: 1;
   color: rgba(255, 255, 255, 1);
   font-family: "MrEavesXLModOT-Bold";
@@ -474,7 +479,8 @@ body {
   text-align: left;
   line-height: 34px;
 }
-.footer-headline{
+
+.footer-headline {
   opacity: 1;
   color: rgba(255, 255, 255, 1);
   font-family: "MrEavesXLModOT-Ultra";
@@ -486,9 +492,48 @@ body {
   line-height: 48px;
   text-transform: uppercase;
 }
-
+.navbar-toggler-icon{
+  filter: brightness(0) invert(1);
+  background-image: url(./images/icon_menu_white.svg);
+}
+@media (max-width: 1399.98px) { 
+  .hero-menu ul li {
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .hero-menu ul li a {
+    color: var(--primary-color);
+    font-family: "MrEavesXLModOT-Bold";
+    font-size: 18px;
+    font-weight: 700;
+    font-style: Bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+}
+@media (max-width: 1199.98px) {
+  .hero-menu ul li {
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .hero-menu ul li a {
+    color: var(--primary-color);
+    font-family: "MrEavesXLModOT-Bold";
+    font-size: 18px;
+    font-weight: 700;
+    font-style: Bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.hero-section-padding {
+    padding: 40px 0 40px 40px;
+}
+}
 @media (max-width: 991.98px) {
-
   .image-container {
     text-align: center;
   }
@@ -502,7 +547,7 @@ body {
   }
 
   .hero-section-padding {
-    padding: 20px;
+    padding: 20px 50px;
   }
 
   .border-left {
@@ -515,7 +560,9 @@ body {
     overflow: hidden;
     padding: 10px;
   }
-  .footer-menu-items li, .footer-menu-items li a {
+
+  .footer-menu-items li,
+  .footer-menu-items li a {
     opacity: 1;
     color: rgba(255, 255, 255, 1);
     font-family: "MrEavesXLModOT-Bold";
@@ -526,29 +573,48 @@ body {
     text-align: center;
     line-height: 1.5;
   }
-  .footer-headline{
-  opacity: 1;
-  color: rgba(255, 255, 255, 1);
-  font-family: "MrEavesXLModOT-Ultra";
-  font-size: 26px;
-  font-weight: 900;
-  font-style: Ultra;
-  letter-spacing: 0.65px;
-  text-align: center;
-  line-height: 36px;
-  text-transform: uppercase;
+
+  .footer-headline {
+    opacity: 1;
+    color: rgba(255, 255, 255, 1);
+    font-family: "MrEavesXLModOT-Ultra";
+    font-size: 26px;
+    font-weight: 900;
+    font-style: Ultra;
+    letter-spacing: 0.65px;
+    text-align: center;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  .social-link {
+    margin: 0 auto;
+  }
+
+  .navbar-toggler {
+    color: #ffffff;
+    background-color: transparent;
+    border: 0 !important;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .hero-menu ul li {
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .hero-menu ul li a {
+    color: var(--primary-color);
+    font-family: "MrEavesXLModOT-Bold";
+    font-size: 22px;
+    font-weight: 700;
+    font-style: Bold;
+    letter-spacing: 2px;
+    text-align: center;
 }
-.social-link{
-  margin: 0 auto;
-}
-.navbar-toggler {
-  color: #ffffff;
-  background-color: transparent;
-  border: 1px solid rgb(255 255 255);
- }
- .navbar-toggler:focus{
-  box-shadow: none;
- }
 }
 
 @media (max-width: 767.98px) {
@@ -579,6 +645,7 @@ body {
     font-style: Bold;
     letter-spacing: 0px;
     text-align: left;
+    line-height: 34px;
   }
 
   .banner-img {
@@ -701,12 +768,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     margin: 4rem auto;
   }
- .footer-menu-items li, .footer-menu-items li a {
+
+  .footer-menu-items li,
+  .footer-menu-items li a {
     opacity: 1;
     color: rgba(255, 255, 255, 1);
     font-family: "MrEavesXLModOT-Bold";
@@ -717,40 +786,47 @@ body {
     text-align: center;
     line-height: 1.5;
   }
-  .footer-headline{
-  opacity: 1;
-  color: rgba(255, 255, 255, 1);
-  font-family: "MrEavesXLModOT-Ultra";
-  font-size: 26px;
-  font-weight: 900;
-  font-style: Ultra;
-  letter-spacing: 0.65px;
-  text-align: center;
-  line-height: 36px;
-  text-transform: uppercase;
+
+  .footer-headline {
+    opacity: 1;
+    color: rgba(255, 255, 255, 1);
+    font-family: "MrEavesXLModOT-Ultra";
+    font-size: 26px;
+    font-weight: 900;
+    font-style: Ultra;
+    letter-spacing: 0.65px;
+    text-align: center;
+    line-height: 36px;
+    text-transform: uppercase;
   }
-  .social-link{
-  margin: 0 auto;
+
+  .social-link {
+    margin: 0 auto;
+  }
+
+  .footer-bottom-area {
+    opacity: 1;
+    color: rgba(255, 255, 255, 1);
+    font-family: "MrEavesXLModOT-Bold";
+    font-size: 18px;
+    font-weight: 700;
+    font-style: Bold;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+  }
+
+  .navbar-toggler {
+    color: #ffffff;
+    background-color: transparent;
+    border: 0 !important;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
 }
-.footer-bottom-area{
-  opacity: 1;
-color: rgba(255, 255, 255, 1);
-font-family: "MrEavesXLModOT-Bold";
-font-size: 18px;
-font-weight: 700;
-font-style: Bold;
-letter-spacing: 0px;
-text-align: center;
-}
-.navbar-nav .nav-item .nav-link{
- color: #ffffff;
-}
-.navbar-toggler {
-  color: #ffffff;
-  background-color: transparent;
-  border: 1px solid rgb(255 255 255);
- }
- .navbar-toggler:focus{
-  box-shadow: none;
- }
-}
+

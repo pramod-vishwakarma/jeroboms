@@ -13,70 +13,115 @@
 
 <body>
   <!-- Header -->
+<nav class="navbar navbar-expand-lg sticky-top navbar-primary">
+  <div class="container">
 
-  <nav class="navbar navbar-expand-lg sticky-top navbar-primary">
-    <div class="container">
-      <!-- <div class="col-lg-4">
-      </div>
-      <div class="col-lg-4"> -->
-         <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
-        <img src="./assets/images//png/logo.png" alt="Logo" width="160"
-          height="auto" class="me-2" />
+    <!-- Flex row that stays in normal flow -->
+    <div class="d-flex w-100 justify-content-between align-items-center d-lg-none">
+      <!-- Toggle Button (Left) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Logo (Center) -->
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="./assets/images/png/logo.png" alt="Logo" width="160" height="auto" />
       </a>
-      <!-- </div> -->
-      
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+      <!-- Social Links (Right) -->
+      <div class="d-flex gap-2">
+        <a class="nav-link social-link bg-white" href="#"><i class="lni lni-user-4 text-primary"></i></a>
+      </div>
+    </div>
+
+    <!-- Desktop layout -->
+    <div class="d-none d-lg-flex w-100 align-items-center justify-content-between">
+      <!-- Centered Logo (still centered in desktop) -->
+      <a class="navbar-brand ms-auto" href="#">
+        <img src="./assets/images/png/logo.png" alt="Logo" width="160" height="auto" />
+      </a>
+
+      <!-- Social Icons (Right) -->
+      <div class="d-flex gap-3 ms-auto">
+        <a class="nav-link social-link bg-white" href="#"><i class="lni lni-search-1 text-primary"></i></a>
+        <a class="nav-link social-link bg-white" href="#"><i class="lni lni-user-4 text-primary"></i></a>
+      </div>
+    </div>
+
+    <!-- Collapsible Nav Menu -->
+    <div class="collapse navbar-collapse mt-2" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item d-lg-none"><a class="nav-link" href="#">WINES</a></li>
+        <li class="nav-item d-lg-none"><a class="nav-link" href="#">PRODUCERS</a></li>
+        <li class="nav-item d-lg-none"><a class="nav-link" href="#">CHAMPAGNE & SPARKLING</a></li>
+        <li class="nav-item d-lg-none"><a class="nav-link" href="#">SPIRITS</a></li>
+        <li class="nav-item d-lg-none"><a class="nav-link" href="#">TRADE LIST</a></li>
+        <li class="nav-item d-lg-none"><a class="nav-link" href="#">FINE WINE LIST</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+
+
+  <!-- <nav class="navbar navbar-expand-lg sticky-top navbar-primary">
+    <div class="container">
+      <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+        <img src="./assets/images//png/logo.png" alt="Logo" width="160" height="auto" class="me-2" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-collapse collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item d-flex d-lg-none">
-                        <a class="nav-link" href="#">WINES</a>
-                    </li>
-                    <li class="nav-item d-flex d-lg-none">
-                        <a class="nav-link" href="#s">PRODUCERS</a>
-                    </li>
-                    <li class="nav-item d-flex d-lg-none">
-                        <a class="nav-link" href="#">CHAMPAGNE & SPARKLING</a>
-                    </li>
-                    <li class="nav-item d-flex d-lg-none">
-                        <a class="nav-link" href="#">SPIRITS</a>
-                    </li>
-                    <li class="nav-item d-flex d-lg-none">
-                        <a class="nav-link" href="#">TRADE LIST</a>
-                    </li>
-                     <li class="nav-item d-flex d-lg-none">
-                        <a class="nav-link" href="#">FINE WINE LIST</a>
-                    </li>
-                     <li class="nav-item d-flex d-lg-none">
-                        <a class="nav-link" href="#">TRADE LIST</a>
-                    </li>
-                </ul>
-                <div class="d-flex gap-3">
-                <a class="nav-link social-link bg-white" href="#"><i class="lni lni-search-1 text-primary"></i></a>
-                 <a class="nav-link social-link bg-white" href="#"><i class="lni lni-user-4 text-primary"></i></a>
-                 </div>
-            </div>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item d-flex d-lg-none">
+            <a class="nav-link" href="#">WINES</a>
+          </li>
+          <li class="nav-item d-flex d-lg-none">
+            <a class="nav-link" href="#s">PRODUCERS</a>
+          </li>
+          <li class="nav-item d-flex d-lg-none">
+            <a class="nav-link" href="#">CHAMPAGNE & SPARKLING</a>
+          </li>
+          <li class="nav-item d-flex d-lg-none">
+            <a class="nav-link" href="#">SPIRITS</a>
+          </li>
+          <li class="nav-item d-flex d-lg-none">
+            <a class="nav-link" href="#">TRADE LIST</a>
+          </li>
+          <li class="nav-item d-flex d-lg-none">
+            <a class="nav-link" href="#">FINE WINE LIST</a>
+          </li>
+          <li class="nav-item d-flex d-lg-none">
+            <a class="nav-link" href="#">TRADE LIST</a>
+          </li>
+        </ul>
+        <div class="d-flex gap-3">
+          <a class="nav-link social-link bg-white" href="#"><i class="lni lni-search-1 text-primary"></i></a>
+          <a class="nav-link social-link bg-white" href="#"><i class="lni lni-user-4 text-primary"></i></a>
+        </div>
+      </div>
     </div>
-  </nav>
- 
+  </nav> -->
+
 
   <!-- Hero Section -->
   <section id="home" class="hero-section">
     <div class="container-fluid">
       <div class="row justify-content-center">
-      <div class="d-none d-lg-flex flex-column flex-md-row justify-content-center text-center text-md-start hide-hero-menu">
-        <div class="hero-menu">
-          <ul>
-            <li><a href="#" class="text-decoration-none">WINES</a></li>
-            <li><a href="#" class="text-decoration-none">PRODUCERS</a></li>
-            <li><a href="#" class="text-decoration-none"> CHAMPAGNE & SPARKLING</a></li>
-            <li><a href="#" class="text-decoration-none"> SPIRITS</a></li>
-            <li><a href="#" class="text-decoration-none"> TRADE LIST</a></li>
-            <li><a href="#" class="text-decoration-none"> FINE WINE LIST</a></li>
-            <li><a href="#" class="text-decoration-none"> ABOUT US</a></li>
-          </ul>
-        </div>
+        <div
+          class="d-none d-lg-flex flex-column flex-md-row justify-content-center text-center text-md-start hide-hero-menu">
+          <div class="hero-menu">
+            <ul>
+              <li><a href="#" class="text-decoration-none">WINES</a></li>
+              <li><a href="#" class="text-decoration-none">PRODUCERS</a></li>
+              <li><a href="#" class="text-decoration-none"> CHAMPAGNE & SPARKLING</a></li>
+              <li><a href="#" class="text-decoration-none"> SPIRITS</a></li>
+              <li><a href="#" class="text-decoration-none"> TRADE LIST</a></li>
+              <li><a href="#" class="text-decoration-none"> FINE WINE LIST</a></li>
+              <li><a href="#" class="text-decoration-none"> ABOUT US</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -95,10 +140,12 @@
         </div>
         <div class="col-lg-6 p-0" data-aos="fade-left" data-aos-delay="200">
           <div class="position-relative text-center text-md-end">
-          <img src="./assets/images/png/bottles-2-for-desktop.png" alt="" class="img-fluid banner-img d-none d-lg-inline" />
-          
-          <img src="./assets/images/png/bottles-2.png" alt="" class="img-fluid banner-img-center d-inline d-lg-none" />
-        </div>
+            <img src="./assets/images/png/bottles-2-for-desktop.png" alt=""
+              class="img-fluid banner-img d-none d-lg-inline" />
+
+            <img src="./assets/images/png/bottles-2.png" alt=""
+              class="img-fluid banner-img-center d-inline d-lg-none" />
+          </div>
         </div>
       </div>
     </div>
@@ -112,7 +159,7 @@
       </div>
       <div class="row">
         <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card h-100 text-center p-2">
+          <div class="card h-100 text-center p-0">
             <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/portfolio.svg" alt="Portfolio" />
             </div>
@@ -125,7 +172,7 @@
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card h-100 text-center p-2">
+          <div class="card h-100 text-center p-0">
             <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/fine_wine_list.svg" alt="Fine wine list" />
             </div>
@@ -138,7 +185,7 @@
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card h-100 text-center p-2">
+          <div class="card h-100 text-center p-0">
             <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/delivery.svg" alt="Delivery" />
             </div>
@@ -152,7 +199,7 @@
           </div>
         </div>
         <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up">
-          <div class="card h-100 text-center p-2">
+          <div class="card h-100 text-center p-0">
             <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/training.svg" alt="Training" />
             </div>
@@ -166,7 +213,7 @@
         </div>
 
         <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="card h-100 text-center p-2">
+          <div class="card h-100 text-center p-0">
             <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/advice.svg" alt="Advice" />
             </div>
@@ -180,7 +227,7 @@
         </div>
 
         <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card h-100 text-center p-2">
+          <div class="card h-100 text-center p-0">
             <div class="icon-wrapper mb-1 mb-md-4 mx-auto">
               <img src="./assets/icons/bespoke.svg" alt="Bespoke sourcing" />
             </div>
@@ -214,11 +261,11 @@
         <div class="col-sm-6 col-md-6 col-lg-6 mb-5 mb-lg-0" data-aos="fade-left">
           <div class="position-relative">
             <div class="image-container">
-            <img src="./assets/images/png/Trade2024_cover.png" alt="Trade List 2024" />
+              <img src="./assets/images/png/Trade2024_cover.png" alt="Trade List 2024" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -244,19 +291,20 @@
     </div>
   </section>
 
-   <!-- Meet Up Section -->
+  <!-- Meet Up Section -->
   <section id="meetup" class="section-padding meetup-section">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 p-0 m-0" data-aos="fade-right">
-          <img src="./assets/images/png/bottleedit-for-mobile.png" class="img-fluid d-block d-md-none"/>
+          <img src="./assets/images/png/bottleedit-for-mobile.png" class="img-fluid d-block d-md-none" />
         </div>
         <div class="col-lg-6 meet-up-procedure" data-aos="fade-left">
           <div class="section-title1 text-lg-start text-center">
             <h2 class="trade-list-title">Meet the producer</h2>
           </div>
           <p class="mt-4 mb-4 trade-list-desc text-black">
-            Domaine Armand Rousseau is one of the most iconic domaines in Burgundy. Purchasing their wines on release is the dream of Burgundy drinkers.
+            Domaine Armand Rousseau is one of the most iconic domaines in Burgundy. Purchasing their wines on release is
+            the dream of Burgundy drinkers.
           </p>
           <a href="#" class="link-text text-black text-decoration-none position-relative">Discover more</a>
         </div>
@@ -272,26 +320,27 @@
           <div class="position-relative">
             <div class="wrapper">
               <div>
-                <img src="./assets//images/comma.svg" width="20px" height="20px"
-                style="rotate: 180deg;" class="img-fluid" />
+                <img src="./assets//images/comma.svg" width="20px" height="20px" style="rotate: 180deg;"
+                  class="img-fluid" />
               </div>
               <div class="description">
-                <p>At Jeroboams, they take pride in <br>curating a selection of wines that<br> not only meet but exceed the<br>expectations of their customers.</p>
-            </div>
+                <p>At Jeroboams, they take pride in <br>curating a selection of wines that<br> not only meet but exceed
+                  the<br>expectations of their customers.</p>
+              </div>
               <div>
                 <img src="./assets//images/comma.svg" width="20px" height="20px" class="img-fluid" />
               </div>
-          </div>
+            </div>
           </div>
         </div>
         <div class="col-lg-6 p-0 p-md-2 ps-lg-5 border-left" data-aos="fade-left">
-          <div class="d-flex gap-4">
-            <div class="winner-img">
-          <img src="./assets/images/png/IWC_industry_blue.png" alt="invited" class="img-fluid "/>
+          <div class="row align-items-center justify-content-center">
+            <div class="col">
+              <img src="./assets/images/png/IWC_industry_blue.png" alt="invited" class="img-fluid" />
             </div>
-            <div class="winner-img">
-          <img src="./assets/images/png/IWC_industry_winBuyingTeam.png" alt="invited" class="img-fluid" />
-          </div>
+            <div class="col">
+              <img src="./assets/images/png/IWC_industry_winBuyingTeam.png" alt="invited" class="img-fluid"/>
+            </div>
           </div>
         </div>
       </div>
@@ -305,8 +354,7 @@
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
           <div class="mb-4">
             <div class="d-none d-lg-flex align-items-center mb-3">
-               <img src="./assets/images//png/logo.png" alt="Logo" width="160"
-                height="auto" class="me-2" />
+              <img src="./assets/images//png/logo.png" alt="Logo" width="160" height="auto" class="me-2" />
             </div>
             <ul class="list-unstyled footer-menu-items">
               <li class="mb-0">
@@ -349,7 +397,7 @@
               <a href="#" class="text-white text-decoration-none hover-text-primary">Trade list</a>
             </li>
             <li class="mb-2">
-            <a href="#" class="text-white text-decoration-none hover-text-primary">Fine Wine list</a>
+              <a href="#" class="text-white text-decoration-none hover-text-primary">Fine Wine list</a>
             </li>
           </ul>
         </div>
@@ -375,14 +423,14 @@
         <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
           <h5 class="fw-bold mb-4 footer-headline">Partners</h5>
           <div class="d-flex d-lg-block justify-content-center align-items-end gap-3">
-          <div class="mb-3">
-            <img src="./assets//images/png/The-Drinks-Trust-Logo.png" alt="Email" width="80"
-              height="auto" class="text-primary me-3 flex-shrink-0" />
-          </div>
-          <div class="mb-3">
-             <img src="./assets//images/png/Gerard-Basset-Foundation-Full-logo.png" alt="Email" width="80"
-              height="auto" class="text-primary me-3 flex-shrink-0" />
-          </div>
+            <div class="mb-3">
+              <img src="./assets//images/png/The-Drinks-Trust-Logo.png" alt="Email" width="80" height="auto"
+                class="text-primary me-3 flex-shrink-0" />
+            </div>
+            <div class="mb-3">
+              <img src="./assets//images/png/Gerard-Basset-Foundation-Full-logo.png" alt="Email" width="80"
+                height="auto" class="text-primary me-3 flex-shrink-0" />
+            </div>
           </div>
         </div>
       </div>
@@ -399,7 +447,7 @@
             <li><a href="#" class="text-white text-decoration-none">Terms &amp; Conditions</a></li>
             <li><a href="#" class="text-white text-decoration-none"> &copy; JEROBOAMS TRADE LTD. REG. IN ENGLAND &
                 WALES 3315645</a>
-              </li>
+            </li>
           </ul>
         </div>
       </div>
