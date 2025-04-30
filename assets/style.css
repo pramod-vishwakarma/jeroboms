@@ -498,10 +498,10 @@ body {
   filter: brightness(0) invert(1);
   background-image: url(./images/icon_menu_white.svg);
 }
-@media (max-width: 1400px) { 
-.hero-section-padding {
-  padding: 40px 40px 40px 80px;
-}
+@media (max-width: 1440px) { 
+  .hero-section-padding {
+    padding: 40px 40px 40px 80px;
+  }
 }
 @media (max-width: 1399.98px) { 
   .hero-menu ul li {
