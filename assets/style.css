@@ -514,6 +514,9 @@ body {
     letter-spacing: 2px;
     text-align: center;
 }
+.hero-section-padding {
+  padding: 40px 40px 40px 80px;
+}
 }
 @media (max-width: 1199.98px) {
   .hero-menu ul li {
