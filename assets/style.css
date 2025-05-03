@@ -470,7 +470,7 @@ body {
 }
 
 .hero-section-padding {
-  padding: 40px 0 40px 120px;
+  padding: 40px 20px 40px 120px;
 }
 
 .footer-menu-items li,
@@ -530,8 +530,13 @@ body {
   transform: translateX(-50%) rotate(-2deg);
   z-index: 1;
 }
+@media (max-width: 1440px) { 
+  .hero-section-padding {
+    padding: 40px 40px 40px 80px;
+  }
+}
 
-@media (max-width: 1399.98px) {
+@media (max-width: 1399.98px) { 
   .hero-menu ul li {
     color: var(--primary-color);
     position: relative;
