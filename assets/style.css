@@ -196,8 +196,10 @@ body {
 }
 
 .social-link {
-  width: 36px;
-  height: 36px;
+  /* width: 36px;
+  height: 36px; */
+  width: 40px;
+  height: 40px;
   background: var(--primary-color);
   border-radius: 50%;
   display: flex;
@@ -273,7 +275,11 @@ body {
 
 .trade-section {
   background-image: linear-gradient(240deg, #03368C 50%, #000000 41%);
-  padding: 60px 0;
+  /* padding: 60px 0; */
+}
+
+.h-800px {
+  height: 800px;
 }
 
 .image-container {
@@ -365,7 +371,7 @@ body {
 }
 
 .wrapper p {
-  margin: 20px 20px 20px 0;
+  margin: 20px 40px 20px 0;
   line-height: 34px;
 }
 
@@ -382,7 +388,6 @@ body {
 }
 
 .testimonial-section {
-  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -391,7 +396,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height: 100vh; */
+  height: 1000px;
   display: flex;
   align-items: center;
 }
@@ -432,7 +437,7 @@ body {
 
 .navbar-primary {
   background-color: var(--primary-color) !important;
-  min-height: 70px;
+  min-height: 160px;
 }
 
 .text-primary {
@@ -530,13 +535,33 @@ body {
   transform: translateX(-50%) rotate(-2deg);
   z-index: 1;
 }
-@media (max-width: 1440px) { 
+.footer-logo-wrapper {
+  position: relative;
+  display: inline-block; /* Shrinks to logo width */
+}
+
+.footer-logo-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -6px; /* Adjust based on spacing preference */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff; /* or desired color */
+}
+.width-150 {
+    width: 120px !important;
+  }
+@media (max-width: 1440px) {
   .hero-section-padding {
     padding: 40px 40px 40px 80px;
   }
+  .width-150 {
+    width: 120px !important;
+  }
 }
 
-@media (max-width: 1399.98px) { 
+@media (max-width: 1399.98px) {
   .hero-menu ul li {
     color: var(--primary-color);
     position: relative;
@@ -552,6 +577,9 @@ body {
     font-style: Bold;
     letter-spacing: 2px;
     text-align: center;
+  }
+  .width-150 {
+    width: 120px !important;
   }
 }
 
@@ -575,6 +603,9 @@ body {
 
   .hero-section-padding {
     padding: 40px 0 40px 40px;
+  }
+  .width-150 {
+    width: 150px !important;
   }
 }
 
@@ -619,6 +650,7 @@ body {
 
   .trade-section {
     background-image: linear-gradient(240deg, #03368C 50%, #000000 41%);
+    padding: 60px 0;
   }
 
   .trade-list-title {
@@ -736,7 +768,13 @@ body {
   .full-width {
     max-width: 100%;
   }
-
+  .navbar-primary {
+    background-color: var(--primary-color) !important;
+    min-height: 70px;
+  }
+   .width-150 {
+    width: 150px !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -833,6 +871,7 @@ body {
 
   .trade-section {
     background-image: linear-gradient(240deg, #03368C 50%, #000000 41%);
+    padding: 60px 0;
   }
 
   .text-content {
@@ -971,6 +1010,17 @@ body {
   .footer-bottom-area ul li a {
     line-height: 34px;
   }
+
+  .h-800px {
+    height: auto;
+  }
+  .navbar-primary {
+    background-color: var(--primary-color) !important;
+    min-height: 70px;
+  }
+   .width-150 {
+    width: 150px !important;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -1003,6 +1053,14 @@ body {
   .width-150 {
     width: 150px !important;
   }
+
+  .h-800px {
+    height: auto;
+  }
+  .navbar-primary {
+    background-color: var(--primary-color) !important;
+    min-height: 70px;
+  }
 }
 
 @media (max-width: 477px) {
@@ -1015,6 +1073,13 @@ body {
     z-index: 1;
   }
 
+  .h-800px {
+    height: auto;
+  }
+  .navbar-primary {
+    background-color: var(--primary-color) !important;
+    min-height: 70px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1052,5 +1117,13 @@ body {
     bottom: 50px;
     transform: translateX(-50%) rotate(-2deg);
     z-index: 1;
+  }
+
+  .h-800px {
+    height: auto;
+  }
+  .navbar-primary {
+    background-color: var(--primary-color) !important;
+    min-height: 70px;
   }
 }
